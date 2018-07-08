@@ -21,7 +21,7 @@ public class RetrofitManager {
         initRetrofit();
     }
 
-    private static RetrofitManager getInstance(){
+    public static RetrofitManager getInstance(){
         return SingletonHolder.sInstance;
     }
 
@@ -50,7 +50,7 @@ public class RetrofitManager {
                 .build();
     }
 
-    public <T> T createReq(Class<T> reqServer){
+    public <T> T getService(Class<T> reqServer){
         return mRetrofit.create(reqServer);
     }
 
