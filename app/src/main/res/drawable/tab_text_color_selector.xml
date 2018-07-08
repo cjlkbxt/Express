@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--控制BottomNavigationView底部按钮图片和文字的颜色-->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:color="#1BB5D7" android:state_checked="true"/>
+    <item android:color="#1BB5D7" android:state_pressed="true"/>
+    <item android:color="#40111111"/>
+</selector>
