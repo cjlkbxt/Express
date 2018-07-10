@@ -1,4 +1,4 @@
-package express.tutu.com.express.configs;
+package express.tutu.com.commonsdk.network.configs;
 
 /**
  * Created by cjlkbxt on 2018/7/7/007.

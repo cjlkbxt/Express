@@ -1,4 +1,4 @@
-package express.tutu.com.express.network.request;
+package express.tutu.com.commonsdk.network.request;
 
 /**
  * Created by cjlkbxt on 2018/7/8/008.

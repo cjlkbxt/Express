@@ -1,9 +1,9 @@
-package express.tutu.com.express.network;
+package express.tutu.com.commonsdk.network;
 
 import java.util.concurrent.TimeUnit;
 
-import express.tutu.com.express.BuildConfig;
-import express.tutu.com.express.configs.NetworkConfig;
+import express.tutu.com.commonsdk.BuildConfig;
+import express.tutu.com.commonsdk.network.configs.NetworkConfig;
 import okhttp3.OkHttpClient;
 import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
@@ -35,7 +35,8 @@ public class RetrofitManager {
         HttpLoggingInterceptor LoginInterceptor = new HttpLoggingInterceptor();
         LoginInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         if (BuildConfig.DEBUG){
-            builder.addInterceptor(LoginInterceptor); //添加retrofit日志打印
+            //添加retrofit日志打印
+            builder.addInterceptor(LoginInterceptor);
         }
         builder.connectTimeout(NetworkConfig.CONNECT_TIMEOUT, TimeUnit.SECONDS);
         builder.readTimeout(NetworkConfig.READ_TIMEOUT, TimeUnit.SECONDS);

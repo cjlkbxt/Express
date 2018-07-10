@@ -6,6 +6,7 @@ import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.view.MenuItem;
 
+import express.tutu.com.commonsdk.imageloader.manager.ImageLoaderManager;
 import express.tutu.com.express.R;
 import express.tutu.com.express.ui.adapter.ViewPagerAdapter;
 import express.tutu.com.express.ui.fragment.FindExpressFragment;

@@ -1,4 +1,4 @@
-package express.tutu.com.express.network.response;
+package express.tutu.com.commonsdk.network.response;
 
 import com.google.gson.annotations.SerializedName;
 

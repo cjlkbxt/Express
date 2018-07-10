@@ -1,8 +1,8 @@
 package express.tutu.com.express.network.api;
 
-import express.tutu.com.express.network.RetrofitManager;
+import express.tutu.com.commonsdk.network.RetrofitManager;
+import express.tutu.com.commonsdk.network.request.EmptyRequest;
 import express.tutu.com.express.network.okservice.UserInfoOkService;
-import express.tutu.com.express.network.request.EmptyRequest;
 import express.tutu.com.express.network.response.UserInfoResponse;
 import retrofit2.Call;
 

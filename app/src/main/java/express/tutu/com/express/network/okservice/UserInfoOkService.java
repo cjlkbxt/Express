@@ -1,6 +1,6 @@
 package express.tutu.com.express.network.okservice;
 
-import express.tutu.com.express.network.request.EmptyRequest;
+import express.tutu.com.commonsdk.network.request.EmptyRequest;
 import express.tutu.com.express.network.response.UserInfoResponse;
 import retrofit2.Call;
 import retrofit2.http.Body;
