@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">app_update</string>
+    <string name="update_download_failed">app_update</string>
+    <string name="update_download_start">app_update</string>
+    <string name="update_download_progressing">app_update</string>
+    <string name="update_download_finish">app_update</string>
+</resources>

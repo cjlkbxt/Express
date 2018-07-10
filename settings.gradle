@@ -1,1 +1,1 @@
-include ':app', ':commonsdk'
+include ':app', ':commonsdk', ':app_update'
