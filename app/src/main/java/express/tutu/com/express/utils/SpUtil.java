@@ -7,7 +7,7 @@ import android.content.SharedPreferences;
  * Created by cjlkbxt on 2018/7/8/008.
  */
 
-public class SPUtil {
+public class SpUtil {
 
     private static final String SP_FILE_NAME = "sp_config";
 

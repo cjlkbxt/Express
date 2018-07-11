@@ -1,5 +1,7 @@
 package express.tutu.com.express.ui.activity;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -109,5 +111,23 @@ public class HomeActivity extends BaseActivity{
         viewPager.setAdapter(adapter);
     }
 
+    @Override
+    public void onBackPressed() {
+        showExitConfirmDialog();
+    }
 
+    private void showExitConfirmDialog(){
+        finish();
+//        new AlertDialog().Builder(this)
+//                .setTitle(getString(R.string.confirm_exit))
+//                .setDialogName("logoutDialog")
+//                .setNegativeButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+//                    @Override
+//                    public void onClick(DialogInterface dialog, int which) {
+//                        finish();
+//                    }
+//                })
+//                .setPositiveButton(getString(R.string.cancel), null)
+//                .show();
+    }
 }
