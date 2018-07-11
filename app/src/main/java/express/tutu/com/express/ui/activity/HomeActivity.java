@@ -1,16 +1,13 @@
 package express.tutu.com.express.ui.activity;
 
-import android.app.AlertDialog;
-import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.view.ViewPager;
 import android.view.MenuItem;
 
-import express.tutu.com.commonsdk.imageloader.manager.ImageLoaderManager;
 import express.tutu.com.express.R;
-import express.tutu.com.express.ui.adapter.ViewPagerAdapter;
+import express.tutu.com.express.ui.adapter.HomeViewPagerAdapter;
 import express.tutu.com.express.ui.fragment.FindExpressFragment;
 import express.tutu.com.express.ui.fragment.MineFragment;
 import express.tutu.com.express.ui.fragment.MyCargoFragment;
@@ -96,13 +93,13 @@ public class HomeActivity extends BaseActivity{
             }
         });
         //为viewpager设置adapter
-        mViewPager.setAdapter(new ViewPagerAdapter(getSupportFragmentManager()));
+        mViewPager.setAdapter(new HomeViewPagerAdapter(getSupportFragmentManager()));
     }
 
 
 
     private void setupViewPager(ViewPager viewPager) {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        HomeViewPagerAdapter adapter = new HomeViewPagerAdapter(getSupportFragmentManager());
 
         adapter.addFragment(new MyCargoFragment());
         adapter.addFragment(new FindExpressFragment());

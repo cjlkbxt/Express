@@ -16,11 +16,11 @@ import express.tutu.com.express.ui.fragment.OrderManageFragment;
  * Created by cjlkbxt on 2018/7/7/007.
  */
 
-public class ViewPagerAdapter extends FragmentPagerAdapter {
+public class HomeViewPagerAdapter extends FragmentPagerAdapter {
 
     private final List<Fragment> mFragmentList = new ArrayList<>();
 
-    public ViewPagerAdapter(FragmentManager fm) {
+    public HomeViewPagerAdapter(FragmentManager fm) {
         super(fm);
     }
 

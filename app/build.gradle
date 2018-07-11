@@ -63,6 +63,8 @@ dependencies {
 
     implementation project(':commonsdk')
     implementation project(':app_update')
+
+
     configurations.all {
         resolutionStrategy.eachDependency { DependencyResolveDetails details ->
             def requested = details.requested

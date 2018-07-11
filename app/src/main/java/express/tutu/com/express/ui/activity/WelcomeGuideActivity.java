@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import express.tutu.com.express.R;
-import express.tutu.com.express.constants.AppConstants;
+import express.tutu.com.express.constants.Constant;
 import express.tutu.com.express.ui.adapter.GuideViewPagerAdapter;
 import express.tutu.com.express.utils.SpUtil;
 
@@ -30,14 +30,14 @@ public class WelcomeGuideActivity extends BaseActivity implements View.OnClickLi
     private Button mBtnStart;
 
     // 引导页图片资源
-    private static final int[] pics = { R.layout.guid_view1,
+    private static final int[] mPics = { R.layout.guid_view1,
             R.layout.guid_view2, R.layout.guid_view3, R.layout.guid_view4 };
 
     // 底部小点图片
-    private ImageView[] dots;
+    private ImageView[] mIvDots;
 
     // 记录当前选中位置
-    private int currentIndex;
+    private int mCurrentIndex;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,10 +47,10 @@ public class WelcomeGuideActivity extends BaseActivity implements View.OnClickLi
         mViews = new ArrayList<View>();
 
         // 初始化引导页视图列表
-        for (int i = 0; i < pics.length; i++) {
-            View view = LayoutInflater.from(this).inflate(pics[i], null);
+        for (int i = 0; i < mPics.length; i++) {
+            View view = LayoutInflater.from(this).inflate(mPics[i], null);
 
-            if (i == pics.length - 1) {
+            if (i == mPics.length - 1) {
                 mBtnStart = (Button) view.findViewById(R.id.btn_login);
                 mBtnStart.setTag("enter");
                 mBtnStart.setOnClickListener(this);
@@ -78,7 +78,7 @@ public class WelcomeGuideActivity extends BaseActivity implements View.OnClickLi
     protected void onPause() {
         super.onPause();
         // 如果切换到后台，就设置下次不进入功能引导页
-        SpUtil.putBoolean(WelcomeGuideActivity.this, AppConstants.FIRST_OPEN, true);
+        SpUtil.putBoolean(WelcomeGuideActivity.this, Constant.FIRST_OPEN, true);
         finish();
     }
 
@@ -94,19 +94,19 @@ public class WelcomeGuideActivity extends BaseActivity implements View.OnClickLi
 
     private void initDots() {
         LinearLayout ll = (LinearLayout) findViewById(R.id.ll);
-        dots = new ImageView[pics.length];
+        mIvDots = new ImageView[mPics.length];
 
         // 循环取得小点图片
-        for (int i = 0; i < pics.length; i++) {
+        for (int i = 0; i < mPics.length; i++) {
             // 得到一个LinearLayout下面的每一个子元素
-            dots[i] = (ImageView) ll.getChildAt(i);
-            dots[i].setEnabled(false);// 都设为灰色
-            dots[i].setOnClickListener(this);
-            dots[i].setTag(i);// 设置位置tag，方便取出与当前位置对应
+            mIvDots[i] = (ImageView) ll.getChildAt(i);
+            mIvDots[i].setEnabled(false);// 都设为灰色
+            mIvDots[i].setOnClickListener(this);
+            mIvDots[i].setTag(i);// 设置位置tag，方便取出与当前位置对应
         }
 
-        currentIndex = 0;
-        dots[currentIndex].setEnabled(true); // 设置为白色，即选中状态
+        mCurrentIndex = 0;
+        mIvDots[mCurrentIndex].setEnabled(true); // 设置为白色，即选中状态
     }
 
     /**
@@ -115,7 +115,7 @@ public class WelcomeGuideActivity extends BaseActivity implements View.OnClickLi
      * @param position
      */
     private void setCurView(int position) {
-        if (position < 0 || position >= pics.length) {
+        if (position < 0 || position >= mPics.length) {
             return;
         }
         mViewPager.setCurrentItem(position);
@@ -127,12 +127,12 @@ public class WelcomeGuideActivity extends BaseActivity implements View.OnClickLi
      * @param position
      */
     private void setCurDot(int position) {
-        if (position < 0 || position > pics.length || currentIndex == position) {
+        if (position < 0 || position > mPics.length || mCurrentIndex == position) {
             return;
         }
-        dots[position].setEnabled(true);
-        dots[currentIndex].setEnabled(false);
-        currentIndex = position;
+        mIvDots[position].setEnabled(true);
+        mIvDots[mCurrentIndex].setEnabled(false);
+        mCurrentIndex = position;
     }
 
     @Override
@@ -150,7 +150,7 @@ public class WelcomeGuideActivity extends BaseActivity implements View.OnClickLi
     private void enterHomeActivity() {
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
-        SpUtil.putBoolean(this, AppConstants.FIRST_OPEN, false);
+        SpUtil.putBoolean(this, Constant.FIRST_OPEN, false);
         finish();
     }
 

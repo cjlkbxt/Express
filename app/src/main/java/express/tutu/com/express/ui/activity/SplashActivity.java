@@ -5,7 +5,7 @@ import android.os.Bundle;
 import android.os.Handler;
 
 import express.tutu.com.express.R;
-import express.tutu.com.express.constants.AppConstants;
+import express.tutu.com.express.constants.Constant;
 import express.tutu.com.express.utils.SpUtil;
 
 /**
@@ -21,7 +21,7 @@ public class SplashActivity extends BaseActivity {
         setContentView(R.layout.activity_splash);
 
         // 判断是否是第一次开启应用
-        final boolean isFirstOpen = SpUtil.getBoolean(this, AppConstants.FIRST_OPEN, true);
+        final boolean isFirstOpen = SpUtil.getBoolean(this, Constant.FIRST_OPEN, true);
         new Handler().postDelayed(new Runnable() {
 
             @Override
