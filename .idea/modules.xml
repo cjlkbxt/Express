@@ -3,11 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Express.iml" filepath="$PROJECT_DIR$/Express.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app_consignor/app.iml" filepath="$PROJECT_DIR$/app_consignor/app.iml" />
+      <module fileurl="file://E:\Express\app_consignor\app.iml" filepath="E:\Express\app_consignor\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app_consignor/app_consignor.iml" filepath="$PROJECT_DIR$/app_consignor/app_consignor.iml" />
       <module fileurl="file://$PROJECT_DIR$/app_express/app_express.iml" filepath="$PROJECT_DIR$/app_express/app_express.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib_network/commonsdk.iml" filepath="$PROJECT_DIR$/lib_network/commonsdk.iml" />
+      <module fileurl="file://E:\Express\lib_update\app_update.iml" filepath="E:\Express\lib_update\app_update.iml" />
+      <module fileurl="file://E:\Express\lib_network\commonsdk.iml" filepath="E:\Express\lib_network\commonsdk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_network/lib_network.iml" filepath="$PROJECT_DIR$/lib_network/lib_network.iml" />
       <module fileurl="file://$PROJECT_DIR$/lib_tools/lib_tools.iml" filepath="$PROJECT_DIR$/lib_tools/lib_tools.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lib_update/app_update.iml" filepath="$PROJECT_DIR$/lib_update/app_update.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lib_update/lib_update.iml" filepath="$PROJECT_DIR$/lib_update/lib_update.iml" />
     </modules>
   </component>
 </project>

@@ -4,6 +4,8 @@ import android.app.Application;
 
 import com.squareup.leakcanary.LeakCanary;
 
+import express.tutu.com.lib_tools.utils.ContextUtil;
+
 
 /**
  * Created by cjlkbxt on 2018/7/7/007.
@@ -18,6 +20,7 @@ public class ExpressApplication extends Application {
         super.onCreate();
         mApplication = this;
         initLeakCanary();
+        ContextUtil.set(this, this);
     }
 
     public static ExpressApplication getInstance(){

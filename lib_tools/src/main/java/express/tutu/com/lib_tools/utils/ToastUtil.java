@@ -8,7 +8,7 @@ import android.view.Gravity;
 import android.widget.Toast;
 
 import express.tutu.com.lib_tools.R;
-import express.tutu.com.lib_tools.tools.ToastCompat;
+import express.tutu.com.lib_tools.tools.toast.ToastCompat;
 
 
 /**

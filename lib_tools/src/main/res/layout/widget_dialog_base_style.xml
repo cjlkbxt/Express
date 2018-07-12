@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <express.tutu.com.lib_tools.tools.dialog.CardLayout
+        android:id="@+id/layout_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:background="#ffffff"
+        android:layout_centerInParent="true"
+        app:cornerRadius="4dp"
+        tools:background="#00ff00">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/title_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/info_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    tools:background="#8000ffff"
+                    tools:layout_height="32dp"
+                    tools:layout_width="32dp"
+                    tools:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    android:textColor="#333333"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tools:text="Title, a long long long long long long long long title"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_msg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.2"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                android:visibility="visible"
+                tools:text="Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines, and more. Anytime, anywhere, across your devices."
+                tools:visibility="visible" />
+
+            <FrameLayout
+                android:id="@+id/view_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="gone"
+                tools:background="#ff0000"
+                tools:layout_height="80dp"
+                tools:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/btn_container"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#ffb2b2b2"
+                android:orientation="horizontal"
+                android:paddingTop="1px">
+
+                <LinearLayout
+                    android:id="@+id/btn_negative"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_dialog_button"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/icon_negative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="9dp"
+                        tools:background="#8000ffff"
+                        tools:layout_height="18dp"
+                        tools:layout_width="18dp" />
+
+                    <TextView
+                        android:id="@+id/text_negative"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#666666"
+                        android:textSize="16sp"
+                        tools:text="Negative" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/btn_divider"
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="#ffb2b2b2"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/btn_positive"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_dialog_button"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/icon_positive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="9dp"
+                        android:visibility="gone"
+                        tools:background="#8000ffff"
+                        tools:layout_height="18dp"
+                        tools:layout_width="18dp"
+                        tools:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/text_positive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="#666666"
+                        android:textSize="16sp"
+                        tools:text="Positive" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </express.tutu.com.lib_tools.tools.dialog.CardLayout>
+
+    <ImageView
+        android:id="@+id/btn_exit"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/layout_main"
+        android:layout_alignRight="@+id/layout_main"
+        android:layout_marginTop="-16dp"
+        android:layout_marginRight="-16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/icon_cancel_dialog"
+        tools:src="#80ff00ff" />
+</RelativeLayout>

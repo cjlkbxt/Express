@@ -1,5 +1,6 @@
 package express.tutu.com.express.ui.activity;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -13,7 +14,7 @@ import express.tutu.com.express.ui.fragment.MineFragment;
 import express.tutu.com.express.ui.fragment.MyCargoFragment;
 import express.tutu.com.express.ui.fragment.OrderManageFragment;
 import express.tutu.com.express.utils.BottomNavigationViewHelper;
-import express.tutu.com.lib_tools.utils.ToastUtil;
+import express.tutu.com.lib_tools.tools.dialog.XWAlertDialog;
 
 
 /**
@@ -115,18 +116,18 @@ public class HomeActivity extends BaseActivity{
     }
 
     private void showExitConfirmDialog(){
-        ToastUtil.newToast(this,"xxx").show();
-//        finish();
-//        new AlertDialog().Builder(this)
-//                .setTitle(getString(R.string.confirm_exit))
-//                .setDialogName("logoutDialog")
-//                .setNegativeButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
-//                    @Override
-//                    public void onClick(DialogInterface dialog, int which) {
-//                        finish();
-//                    }
-//                })
-//                .setPositiveButton(getString(R.string.cancel), null)
-//                .show();
+        new XWAlertDialog.Builder(this)
+                .setTitle("确认")
+                .setDialogName("logoutDialog")
+                .setNegativeButton(getString(R.string.ok), new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+//                        SplashActivity.setSkipSplash(false);
+                        finish();
+                    }
+                })
+                .setPositiveButton(getString(R.string.cancel), null)
+                .show();
+//        new BaseDialog(this).show();
     }
 }

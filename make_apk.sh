@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 ./gradlew clean
-./gradlew assembleDebug
+./gradlew app_consignor:assembleDebug
