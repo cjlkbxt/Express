@@ -8,9 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/app_update" />
-            <option value="$PROJECT_DIR$/commonsdk" />
+            <option value="$PROJECT_DIR$/app_consignor" />
+            <option value="$PROJECT_DIR$/app_express" />
+            <option value="$PROJECT_DIR$/lib_network" />
+            <option value="$PROJECT_DIR$/lib_tools" />
+            <option value="$PROJECT_DIR$/lib_update" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

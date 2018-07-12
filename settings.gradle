@@ -1,1 +1,1 @@
-include ':app', ':commonsdk', ':app_update'
+include ':app_consignor', ':lib_network', ':lib_update', ':lib_tools', ':app_express'
