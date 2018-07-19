@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<express.tutu.com.lib_tools.place.ListenedDrawRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:id="@+id/root_layout">
+
+    <express.tutu.com.lib_tools.place.XRecyclerView
+        android:id="@+id/filter_order_method_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+    </express.tutu.com.lib_tools.place.XRecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        style="@style/LineHorizontal" />
+</express.tutu.com.lib_tools.place.ListenedDrawRelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<express.tutu.com.lib_tools.place.ListenedDrawRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fadingEdge="none"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+
+            <LinearLayout
+                android:id="@+id/select_place_history_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="历史地区"
+                    android:textColor="@color/text_333333"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/select_place_history_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/colorBg" />
+            </LinearLayout>
+
+
+            <express.tutu.com.lib_tools.place.GridPlacePicker
+                android:id="@+id/gridPlacePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        style="@style/LineHorizontal" />
+</express.tutu.com.lib_tools.place.ListenedDrawRelativeLayout>

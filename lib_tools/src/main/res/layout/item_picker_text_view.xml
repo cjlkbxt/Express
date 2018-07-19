@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:textSize="16sp"
+    android:duplicateParentState="true"
+    android:textColor="@color/selector_place_text_color"
+    android:lines="1"
+    android:ellipsize="end"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    tools:background="@drawable/selector_place_view_bg"
+    tools:text="全国"/>

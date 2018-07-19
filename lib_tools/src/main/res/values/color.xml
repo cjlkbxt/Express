@@ -2,5 +2,15 @@
 <resources>
 
     <color name="colorPrimary">#FFfa871e</color>
+    <color name="gray_divider">#E1E1E1</color>
+
+    <color name="light_orange">#fffff8e8</color>
+    <color name="white">#ffffff</color>
+    <color name="colorBg">#FFF5F5F5</color>
+    <color name="text_333333">#333333</color>
+    <color name="colorDivider">#fefefe</color>
+    <color name="cargoColorPrimary">#FFfa871e</color>
+    <color name="text_666666">#666666</color>
+
 
 </resources>

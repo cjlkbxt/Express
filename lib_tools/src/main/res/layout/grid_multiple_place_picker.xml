@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<express.tutu.com.lib_tools.place.ListenedDrawRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg" >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/confirm_btn"
+        android:fadingEdge="none"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/selected_top_layout"
+                android:layout_width="match_parent"
+                android:layout_height="44dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="14dp"
+                    android:layout_centerVertical="true"
+                    android:text="已选地区"
+                    android:textColor="@color/text_333333"
+                    android:textSize="14sp"
+                    android:layout_marginStart="14dp"
+                    android:layout_alignBaseline="@+id/selected_place_clear_btn"
+                    android:layout_alignBottom="@+id/selected_place_clear_btn"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/selected_place_clear_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:gravity="center"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="gone"
+                    android:text="清空"
+                    android:textColor="@color/cargoColorPrimary"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <express.tutu.com.lib_tools.place.FlowLayout
+                android:id="@+id/selected_place_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginLeft="15dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/colorBg"/>
+
+            <LinearLayout
+                android:id="@+id/select_place_history_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="15dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="10dp"
+                    android:text="历史地区"
+                    android:textColor="@color/text_333333"
+                    android:textSize="14sp"/>
+
+                <LinearLayout
+                    android:id="@+id/select_place_history_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:orientation="horizontal"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="6dp"
+                    android:background="@color/colorBg"/>
+            </LinearLayout>
+
+            <express.tutu.com.lib_tools.place.GridPlacePicker
+                android:id="@+id/gridPlacePicker"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        style="@style/LineHorizontal"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:id="@+id/confirm_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cargoColorPrimary"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18sp"/>
+</express.tutu.com.lib_tools.place.ListenedDrawRelativeLayout>

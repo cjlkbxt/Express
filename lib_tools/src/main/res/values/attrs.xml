@@ -6,4 +6,17 @@
         <attr name="cornerRadius" format="dimension" />
     </declare-styleable>
 
+    <declare-styleable name="GridPlacePicker">
+        <attr name="column" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="android:gravity" />
+        <attr name="fixFlowLines" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout_Layout">
+        <attr name="android:layout_gravity" />
+    </declare-styleable>
+
 </resources>

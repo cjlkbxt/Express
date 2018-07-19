@@ -3,10 +3,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/filter_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/colorAccent"
-        android:gravity="center"
-        android:text="four" />
+        android:layout_height="44dp"
+        android:background="@android:color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="0dp"
+        android:paddingTop="0dp">
+
+        <express.tutu.com.lib_tools.tools.popupwindow.DrawableCenterTextView
+            android:id="@+id/tv_start"
+            style="@style/CityPickHeaderStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="出发地"/>
+
+        <express.tutu.com.lib_tools.tools.popupwindow.DrawableCenterTextView
+            android:id="@+id/tv_end"
+            style="@style/CityPickHeaderStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="目的地"/>
+        <express.tutu.com.lib_tools.tools.popupwindow.DrawableCenterTextView
+            android:id="@+id/tv_order_filter"
+            style="@style/CityPickHeaderStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="默认排序" />
+
+        <express.tutu.com.lib_tools.tools.popupwindow.DrawableCenterTextView
+            android:id="@+id/tv_truck_length_and_type"
+            style="@style/CityPickHeaderStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:ellipsize="middle"
+            android:gravity="center"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="筛选"/>
+    </LinearLayout>
 </RelativeLayout>

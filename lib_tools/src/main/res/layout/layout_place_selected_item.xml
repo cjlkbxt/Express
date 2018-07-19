@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:background="@drawable/shape_place_view_selected_bg">
+    <TextView
+        android:id="@+id/place_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="16sp"
+        android:textColor="@color/cargoColorPrimary"
+        tools:text="全国"/>
+
+    <ImageView
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginRight="8dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/btn_place_unselect"/>
+</LinearLayout>
